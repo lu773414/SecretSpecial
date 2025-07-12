@@ -104,9 +104,10 @@
                 }
             },
             mounted() {
+                this.initThree();
                 setTimeout(() => {
                     this.isLoading = false;
-                    this.initThree();
+                    
                 }, 3500);
             },
 
