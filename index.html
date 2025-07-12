@@ -106,9 +106,7 @@
             mounted() {
                 setTimeout(() => {
                     this.isLoading = false;
-                    this.$nextTick(() => {
-                        this.initThree();
-                    });
+                    this.initThree();
                 }, 3500);
             },
 
