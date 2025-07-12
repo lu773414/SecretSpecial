@@ -99,7 +99,6 @@
 
     <script type="module">
         const { createApp } = Vue;
-        // import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.133.1-dCIBIz3pnzocx0lNrLHe/mode=imports/optimized/three.js';
         import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js";
         import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js";
         createApp({
@@ -148,7 +147,7 @@
 
                     // 載入 glb 模型
                     const loader = new GLTFLoader();
-                    loader.load('./base_basic_pbr.glb', (gltf) => {
+                    loader.load('./key.glb', (gltf) => {
                         const model = gltf.scene;
                         // model.scale.set(0.95, 0.95, 0.95); // 縮放
 
